@@ -1,8 +1,11 @@
 import React from 'react'
+import { SunflowerCanvas } from './canvas'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className='w-full h-80'>
+      <SunflowerCanvas />
+    </div>
   )
 }
 
