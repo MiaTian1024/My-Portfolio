@@ -1,6 +1,7 @@
 import React from 'react'
 import heroImage from '../../public/hero.png'
 import AnimatedText from '../components/AnimatedText'
+import HireMe from '../components/HireMe'
 
 
 const Home = () => {
@@ -30,9 +31,12 @@ const Home = () => {
           </p>
           
         </div>
-       
 
       </div>
+
+      
+        <HireMe />
+      
     </div>
   )
 }

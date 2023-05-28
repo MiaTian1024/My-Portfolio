@@ -18,6 +18,9 @@ module.exports = {
         darkBlue:"#230341",
         pinkDark: "#58E6D9",
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      }, 
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
