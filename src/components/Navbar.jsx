@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <header className= "w-full px-32 py-8 mt-8 font-medium flex items-center justify-between" >
+    <div className= "w-full sm:px-32 px-16 py-8 mt-8 font-medium flex items-center justify-between" >
       <nav>  
          <ul className='list-none hidden sm:flex flex-row gap-6'>
            {navLinks.map((link) => (
@@ -27,14 +27,14 @@ const Navbar = () => {
                     group-hover:w-full transition-[width] ease duration-300
                     ${active === link.title ? "w-full" : "w-0" }`}
               >&nbsp;</span>
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`/${link.id}`}>{link.title}</a>
             </li>
                 
            ))}
          </ul>
          </nav>
 
-         <nav className='absolute left-[50%] mt-2 top-2 translate-x-[-50%]'>
+         {/* <nav className='absolute left-[50%] mt-2 top-2 translate-x-[-50%]'>
             <Link
               to='/'
               className='flex items-center justify-center '
@@ -45,7 +45,7 @@ const Navbar = () => {
             >
               <img src={logo} alt="logo" className='w-14 h-14 object-contain' />
             </Link>
-         </nav>
+         </nav> */}
 
 
          <nav className='flex items-center justify-center flex-wrap '>
@@ -110,7 +110,7 @@ const Navbar = () => {
          </div>
     
 
-    </header>
+    </div>
   )
 }
 

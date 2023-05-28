@@ -1,25 +1,26 @@
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route, Routes} from "react-router-dom"
 
-import { About, Contact, Hero, Navbar, Projects, StarCanvas } from './components'
+import { Navbar } from './components'
+import {Home, About, Contact, Projects } from './page'
 
 
 const App = () => {
   return (
-    <div>
+    
       <BrowserRouter>
-        <div className="relative z-0">
-            
+        <header> 
             <Navbar />
-            <Hero />
-            <About />
-            <Projects />
-            <div className="relative z-0">
-                <Contact />
-                <StarCanvas />
-            </div>
-        </div>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>       
       </BrowserRouter>
-    </div>
+    
   )
 }
 
