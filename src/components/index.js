@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Loader from './Loader';
 import StarCanvas from './StarCanvas';
+import AnimatedText from './AnimatedText';
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Projects,
     Contact,
     Loader,
-    StarCanvas
+    StarCanvas,
+    AnimatedText,
 }
