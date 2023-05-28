@@ -1,20 +1,17 @@
 import React from 'react'
-import heroImage from '../../public/hero.jpg'
+import heroImage from '../../public/hero.png'
 import AnimatedText from './AnimatedText'
+
 
 const Hero = () => {
   return (
-    <div className='flex items-center text-dark w-full min-h-screen'>
-      <div className='flex items-center justify-between w-full h-full inline-block z-0 p-32 gap-10'>
+    <div className='flex items-center text-dark py-20'>
+      <div className='flex items-center justify-between w-full h-full z-0 px-32 gap-10'>
 
-        <div className='w-1/2'>
-          <img src={heroImage} alt="heroImage"/>
-        </div>
-
-        <div className='w-1/2 flex flex-col items-center self-center'>
+        <div className='w-3/5 flex flex-col items-center self-center'>
           <AnimatedText 
             text="Turing Vision Into Reality With Code And Design."
-            className='!text-6xl !text-left'
+            className='!text-5xl !text-left !leading-snug'
           />
           
           <p className='my-4 text-base font-medium'>
@@ -24,6 +21,14 @@ const Hero = () => {
           
         </div>
         
+        <div className='w-2/5'>
+         
+           <img 
+             src={heroImage} 
+             alt="heroImage"
+            >
+           </img>
+        </div>
 
       </div>
     </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <header className= "w-full px-32 py-8 font-medium flex items-center justify-between" >
+    <header className= "w-full px-32 py-8 mt-8 font-medium flex items-center justify-between" >
       <nav>  
          <ul className='list-none hidden sm:flex flex-row gap-6'>
            {navLinks.map((link) => (
@@ -34,10 +34,10 @@ const Navbar = () => {
          </ul>
          </nav>
 
-         <nav className='absolute left-[50%] top-2 translate-x-[-50%]'>
+         <nav className='absolute left-[50%] mt-2 top-2 translate-x-[-50%]'>
             <Link
               to='/'
-              className='flex items-center justify-center mt-2'
+              className='flex items-center justify-center '
               onClick={() => {
                 setActive('')
                 window.scrollTo(0, 0)
