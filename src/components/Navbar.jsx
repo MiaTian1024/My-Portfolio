@@ -13,25 +13,8 @@ const Navbar = () => {
 
 
   return (
-    <nav
-      className={`${styles.padding} w-full flex items-center fixed top-0 z-20`}
-    >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-         <Link
-           to='/'
-           className='flex items-center gap-2'
-           onClick={() => {
-            setActive('')
-            window.scrollTo(0, 0)
-           }}
-         >
-          <img src={logo} alt="logo" className='w-12 h-12 object-contain' />
-          <p className='text-secondary text-[20px] font-bold hover:text-[21px] cursor-pointer flex'>
-            Mia &nbsp;
-            <span className='sm:block hidden'> TIAN</span>
-          </p>
-         </Link>
-         <ul className='list-none hidden sm:flex flex-row gap-10'>
+    <header className= "w-full px-32 py-8 font-medium flex items-center justify-between" >
+      <nav>  
          <ul className='list-none hidden sm:flex flex-row gap-6'>
            {navLinks.map((link) => (
             <li
