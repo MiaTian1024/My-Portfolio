@@ -1,11 +1,23 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {motion} from 'framer-motion'
 
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
 
+const CustomLink = ({href, title, className=""}) => {
+  const route = useLocation();
 
+  return(
+    <a href={href} className={`${className} relative group ${route.pathname === href ? 'text-blue' : 'text-pink'}`}>
+      {title}
+
+      <span className={`h-[1px] inline-block bg-blue absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+            ${route.pathname === href ? 'w-full' : 'w-0'}`}
+      >&nbsp;</span>
+    </a>
+  )
+}
 const Navbar = () => {
 
   const [active, setActive] = useState('')
@@ -28,23 +40,10 @@ const Navbar = () => {
       </nav> */}
       
       <nav>  
-         <ul className='list-none hidden sm:flex flex-row gap-6'>
-           {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${active === link.title ? "text-blue" : "text-pink"} relative group
-                hover:text-blue font-medium cursor-pointer`}
-                onClick={() => setActive(link.title)}
-            >
-              <span className={`h-[1px] inline-block bg-blue absolute left-0 -bottom-0.5
-                    group-hover:w-full transition-[width] ease duration-300
-                    ${active === link.title ? "w-full" : "w-0" }`}
-              >&nbsp;</span>
-              <a href={`/${link.id}`}>{link.title}</a>
-            </li>
-                
-           ))}
-         </ul>
+        <CustomLink href="/" title="Home" className='mr-4'/>
+        <CustomLink href="/about" title="About" className='mx-4'/>
+        <CustomLink href="/projects" title="Projects" className='mx-4' />
+        <CustomLink href="/contact" title="Contact" className='ml-4'/>
       </nav>
 
 

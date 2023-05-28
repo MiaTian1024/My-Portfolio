@@ -9,7 +9,7 @@ const App = () => {
     
       <BrowserRouter>
         <header> 
-            <Navbar />
+          <Navbar />
         </header>
         <main>
           <Routes>
