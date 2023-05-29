@@ -6,6 +6,7 @@ import SphereCanvas from './Sphere';
 import Footer from './Footer';
 import Layout from './Layout';
 import HireMe from './HireMe';
+import TransitionEffect from './TransitionEffect';
 
 export {
     Navbar,
@@ -16,4 +17,5 @@ export {
     Footer,
     Layout,
     HireMe,
+    TransitionEffect,
 }

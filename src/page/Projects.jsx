@@ -1,8 +1,11 @@
 import React from 'react'
+import { TransitionEffect } from '../components'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <TransitionEffect  />
+    </div>
   )
 }
 

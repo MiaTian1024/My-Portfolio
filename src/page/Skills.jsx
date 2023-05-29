@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TransitionEffect } from '../components';
 
 const Skill =({name, x, y}) => {
   return (
@@ -21,6 +22,7 @@ const Skill =({name, x, y}) => {
 const Skills = () => {
   return (
     <>
+      <TransitionEffect />
       <h2 className='font-bold text-6xl w-full text-center'>Skills</h2>
       <div className="w-full min-h-screen relative flex items-center justify-center rounded-full bg-circularLight">
         <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer'

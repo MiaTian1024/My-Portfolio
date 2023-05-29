@@ -1,18 +1,16 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 
-import { Navbar, Footer } from './components'
+import { Navbar, Footer} from './components'
 import {Home, Skills, Contact, Projects } from './page'
 
-
 const App = () => {
-  return (
-    
+  return ( 
       <BrowserRouter>
         <header> 
           <Navbar />
         </header>
         <main className="w-full h-screen bg-primary">
-          <Routes>
+          <Routes>        
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
@@ -22,8 +20,7 @@ const App = () => {
         <footer>
           <Footer />
         </footer>      
-      </BrowserRouter>
-    
+      </BrowserRouter> 
   )
 }
 
