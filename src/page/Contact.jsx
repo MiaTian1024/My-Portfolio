@@ -1,8 +1,11 @@
 import React from 'react'
+import { AnimatedText } from '../components'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className=''>
+      <AnimatedText text="Passion Fuels Purpose!" />
+    </div>
   )
 }
 

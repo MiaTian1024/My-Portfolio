@@ -28,7 +28,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        circularLight: "repeating-radial-gradient(#cb017c 2px, #DDDDDD 5px, #DDDDDD 100px);",
       },
     },
   },

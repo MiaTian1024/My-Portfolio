@@ -6,7 +6,7 @@ import HireMe from '../components/HireMe'
 
 const Home = () => {
   return (
-    <div className='py-10 w-full min-h-screen'>
+    <div className='py-10'>
       <div className='flex sm:flex-row flex-col items-center justify-between w-full h-full z-0 sm:px-32 px-16'>
 
         <div className='sm:w-2/5 w-full'>
