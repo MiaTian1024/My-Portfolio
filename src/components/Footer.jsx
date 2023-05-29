@@ -1,13 +1,14 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { LinkedInIcon, TwitterIcon, GithubIcon, PinterestIcon} from './Icons'
+import Layout from './Layout'
 
 const Footer = () => {
   return (
-    <footer className='bg-primary px-32 w-full border-t-2 border-solid border-darkBlue font-medium text-lg text-blue'>
-        <div className='py-8 flex items-center justify-between'>
+    <footer className='bg-primary px-32 w-full border-t-2 border-solid border-darkBlue font-medium text-lg text-blue sm:text-base'>
+        <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6'>
             <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-            <div className='flex items-center'>
+            <div className='flex items-center lg:py-2'>
                 Build With <span className='text-pink text-2xl px-1'>&#9825;</span>
                 by&nbsp;<a href="https://devdreaming.com" className='underline underline-offset-2'>Mia TIAN</a>
             </div>
@@ -43,7 +44,7 @@ const Footer = () => {
 
             </nav>
             
-        </div>
+        </Layout>
     </footer>
   )
 }

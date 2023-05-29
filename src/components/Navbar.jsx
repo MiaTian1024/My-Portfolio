@@ -3,8 +3,6 @@ import { Link, useLocation} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { LinkedInIcon, TwitterIcon, GithubIcon, PinterestIcon} from './Icons'
 
-import { logo, menu, close } from '../assets'
-
 const CustomLink = ({href, title, className=""}) => {
   const route = useLocation();
 
@@ -47,7 +45,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className= "w-full px-32 py-8 font-medium text-lg bg-primary flex items-center justify-end relative" >
+    <header className= "w-full p-24 lg:px-16 md:px-12 sm:px-8 font-medium text-lg bg-primary flex items-center justify-between relative z-10" >
 
       <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
         <span className={`bg-pink block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
