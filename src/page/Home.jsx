@@ -7,9 +7,9 @@ import HireMe from '../components/HireMe'
 const Home = () => {
   return (
     <div className='py-10'>
-      <div className='flex sm:flex-row flex-col items-center justify-between w-full h-full z-0 sm:px-32 px-16'>
+      <div className='flex items-center justify-between px-32'>
 
-        <div className='sm:w-2/5 w-full'>
+        <div className='w-2/5'>
           
           <img 
             src={heroImage} 
@@ -19,7 +19,7 @@ const Home = () => {
           </img>
         </div>
 
-        <div className='sm:w-3/5 w-full flex flex-col items-center self-center'>
+        <div className='w-3/5 flex flex-col items-center self-center'>
           <AnimatedText 
             text="Turing Vision Into Reality With Code And Design."
             className='!text-5xl !text-left !leading-snug'

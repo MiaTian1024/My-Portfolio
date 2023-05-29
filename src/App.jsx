@@ -11,7 +11,7 @@ const App = () => {
         <header> 
           <Navbar />
         </header>
-        <main className="w-full min-h-screen">
+        <main className="w-full h-screen bg-primary">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
