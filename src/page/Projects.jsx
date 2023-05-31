@@ -4,8 +4,6 @@ import {Tilt} from 'react-tilt'
 import { Layout, TransitionEffect } from '../components'
 import { motion } from 'framer-motion'
 
-import {TypingText,  TitleText} from '../components/CustomTexts'
-import heroImage from '../../public/hero.png'
 import { GithubIcon } from '../components/Icons'
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 import { projects } from '../constants'
@@ -21,16 +19,23 @@ const ProjectCard = ({index, title, image, tags, description, link, github }) =>
         }}
         className="py-5 w-[360px] small:w-full"
       >
-      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative rounded-br-2xl'>
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-blue/60 bg-light p-6 relative rounded-br-2xl'>
+      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-blue/40 rounded-br-3xl' />
       <a href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-        <img src={image} alt={title} className='w-full h-auto' />
+        <motion.img 
+          whileHover={{ scale:1.2 }}
+          src={image} 
+          alt={title} 
+          className='w-full h-[200px]' >
+        </motion.img>
       </a>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <a href={link} target="_blank" className='hover:underline underline-offset-2'>
-          <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
+        <a href={link} target="_blank" className='hover:underline text-pink first-letter:underline-offset-2'>
+          <h2 className='my-2 w-full text-left text-pink text-3xl font-bold'>{title}</h2>
         </a>
-        <p className='text-pink font-medium text-md'>{description}</p>
+        <div className='w-full h-[80px]'>
+        <p className='text-blue/50 font-medium text-md'>{description}</p>
+        </div>
 
         <div className='mt-2 flex flex-wrap gap-2'>
          {tags.map((tag) => (
@@ -41,7 +46,7 @@ const ProjectCard = ({index, title, image, tags, description, link, github }) =>
 
        </div>
         <div className='w-full mt-2 flex items-center justify-between'>  
-        <a href={link} target="_blank" className='underline text-lg font-semibold'>Visit</a>
+        <a href={link} target="_blank" className='underline text-pink text-lg font-semibold'>Visit</a>
         <a href={github} target="_blank" className='w-8'> <GithubIcon /></a>
         </div>
       </div>
@@ -55,7 +60,7 @@ const ProjectCard = ({index, title, image, tags, description, link, github }) =>
 const Projects = () => {
   return (
     <>
-      {/* <TransitionEffect  /> */}
+      <TransitionEffect  />
       <div className='w-full h-auto z-0 bg-primary pt-10 px-32 large:px-16 middle:px-12 small:px-8, xs:px-6'>
       <motion.section
         variants={staggerContainer()}
@@ -66,7 +71,7 @@ const Projects = () => {
       >
         
          <motion.div variants={textVariant()}>
-            <h2 className="text-white font-black middle:text-[50px] small:text-[40px] xs:text-[30px] text-[60px]">Projects</h2>
+            <h2 className="text-blue font-black middle:text-[50px] small:text-[40px] xs:text-[30px] text-[60px]">Projects</h2>
           </motion.div>
 
           <div className='w-full flex'>
@@ -79,7 +84,7 @@ const Projects = () => {
           </div>
       
        
-        <div className='mt-20 flex flex-wrap gap-7'>
+        <div className='py-8 flex flex-wrap gap-8'>
           {projects.map((project, index) => (
             <ProjectCard 
               key={`project-${index}`}
