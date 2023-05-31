@@ -9,7 +9,7 @@ const App = () => {
         <header> 
           <Navbar />
         </header>
-        <main className="w-full h-screen bg-primary">
+        <main className="w-full h-auto bg-primary">
           <Routes>        
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />

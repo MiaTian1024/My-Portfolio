@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <TransitionEffect  />
-        <Layout className='pt-0 flex items-center justify-center'>
+        <Layout className='pt-0 h-screen flex items-center justify-center'>
           <div className='flex max-w-7xl items-center justify-between gap-10 large:flex-col'>
 
             <div className='w-2/5 large:w-1/2 middle:w-3/5 small:w-full small:px-10'>

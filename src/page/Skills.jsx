@@ -24,7 +24,7 @@ const Skills = () => {
     <>
       <TransitionEffect />
       <h2 className='font-bold pt-5 text-6xl w-full text-center'>Skills</h2>   
-      <Layout>
+      <Layout className='h-screen'>
           
           <div className="w-full h-full relative flex items-center justify-center rounded-full bg-circularLight">
             <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 large:p-4 middle:pt-2 shadow-dark cursor-pointer'
