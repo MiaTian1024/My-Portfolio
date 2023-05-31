@@ -1,21 +1,33 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { motion } from 'framer-motion';
 import { TransitionEffect, Layout } from '../components';
-import { BallCanvas } from '../components/canvas';
 import { technologies } from '../constants';
 
-const Skill =({name, x, y}) => {
+const Skill =({image, x, y,name}) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleMouseEnter =() =>{
+    setIsHovered(true)
+  }
+  const handleMouseLeave =() =>{
+    setIsHovered(false)
+  }
+
   return (
     <motion.div className='flex items-center justify-center rounded-full
-          cursor-pointer absolute '
+          cursor-pointer absolute bg-pink/20 shadow-dark p-1.5 font-semibold' 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
           initial={{x:0, y:0}}
           animate={{x:x, y:y}}
           transition={{duration: 1.5}}
           viewport={{once: true}}
-
         >
-          {name}
-        </motion.div>
+          
+          {isHovered ? name : image}
+         
+    </motion.div>
+    
   )
 
 }
@@ -34,16 +46,14 @@ const Skills = () => {
               Web
             </motion.div>
 
-            {technologies.map((technology) => (
-            
+            {technologies.map((technology) => (       
               <Skill 
-                name={<BallCanvas icon={technology.icon} />} 
+                image={<img src={technology.icon} alt={technology.name} className='w-12 h-auto' />} 
+                name={technology.name}
                 x={technology.x} 
                 y={technology.y} 
                 key={technology.name}
               />
-             
-
             ))}
 
           </div>
