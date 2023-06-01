@@ -27,8 +27,8 @@ const Home = () => {
               />
               
               <p className='my-4 text-blue/75 font-medium middle:text-sm small:text-xs'>
-                As a skilled full-stack developer, I am dedicated to turing ideas into innovative web applications. 
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development
+                As a full-stack developer, I am dedicated to turing ideas into innovative web applications. 
+                Explore my latest projects, showcasing my expertise in React.js and web development
               </p>
               
             </div>
