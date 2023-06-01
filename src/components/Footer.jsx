@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import { LinkedInIcon, TwitterIcon, GithubIcon, PinterestIcon} from './Icons'
 import Layout from './Layout'
 
 const Footer = () => {

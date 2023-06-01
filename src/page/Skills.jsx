@@ -15,7 +15,7 @@ const Skill =({image, x, y,name}) => {
 
   return (
     <motion.div className='flex items-center justify-center rounded-full
-          cursor-pointer absolute bg-pink/20 shadow-dark p-1.5 font-semibold' 
+          cursor-pointer absolute bg-pink/40 shadow-dark p-1.5 font-semibold' 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           initial={{x:0, y:0}}
@@ -36,10 +36,10 @@ const Skills = () => {
   return (
     <>
       <TransitionEffect />
-      <h2 className='font-bold pt-5 text-6xl w-full text-center'>Skills</h2>   
+      <h2 className='font-bold pt-10 text-pink/80 text-6xl w-full text-center'>Skills</h2>   
       <Layout className='h-screen'>
           
-          <div className="w-full h-full relative flex items-center justify-center rounded-full bg-circularLight">
+          <div className="w-full h-full p-5 relative flex items-center justify-center rounded-full bg-circularLight">
             <motion.div className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 large:p-4 middle:pt-2 shadow-dark cursor-pointer'
               whileHover={{scale:1.05}}
             >

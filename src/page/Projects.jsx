@@ -61,7 +61,7 @@ const Projects = () => {
   return (
     <>
       <TransitionEffect  />
-      <div className='w-full h-auto z-0 bg-primary pt-10 px-32 large:px-16 middle:px-12 small:px-8, xs:px-6'>
+      <div className='w-full h-auto min-h-screen z-0 bg-primary pt-16 px-32 large:px-16 middle:px-12 small:px-8, xs:px-6'>
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
@@ -70,21 +70,18 @@ const Projects = () => {
         className='max-w-7xl mx-auto relative z-0'
       >
         
-         <motion.div variants={textVariant()}>
+         <div>
             <h2 className="text-blue font-black middle:text-[50px] small:text-[40px] xs:text-[30px] text-[60px]">Projects</h2>
-          </motion.div>
+          </div>
 
           <div className='w-full flex'>
-            <motion.p
-              variants={fadeIn("", "", 0.1, 1)}
-              className='mt-3 text-secondary text-[17px] max-w-5xl leading-[30px]'
-            >
+            <p className='mt-3 text-blue/60 text-[18px] max-w-5xl leading-[30px]'>
               Following projects showcases my skills and experience through real-world examples of my work.
-            </motion.p>
+            </p>
           </div>
       
        
-        <div className='py-8 flex flex-wrap gap-8'>
+        <div className='py-10 flex flex-wrap gap-8'>
           {projects.map((project, index) => (
             <ProjectCard 
               key={`project-${index}`}

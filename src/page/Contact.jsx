@@ -66,7 +66,7 @@ const Contact = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="max-w-7xl mx-auto relative z-0 py-20 px-32 large:px-16 middle:px-12 small:px-8 xs:px-6"
+        className="max-w-7xl w-full h-screen mx-auto relative z-0 py-32 px-32 large:px-16 middle:px-12 small:px-8 xs:px-6"
       >
       <div className='flex-col flex gap-10 overflow-hidden'>
         <motion.div
