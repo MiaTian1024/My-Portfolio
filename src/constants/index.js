@@ -11,6 +11,11 @@ import {
     git,
     figma,
     threejs,
+    aws,
+    flask,
+    python,
+    vitejs,
+    mysql,
 } from "../assets"
 
 const projects = [
@@ -85,58 +90,88 @@ const projects = [
 
   const technologies = [
     {
-      name: "HTML 5",
+      name: "HTML",
       icon: html,
       x: "-25vw" ,
       y: "2vw",
     },
     {
-      name: "CSS 3",
+      name: "CSS",
       icon: css,
       x: "-5vw",
-      y: "-10vw",
+      y: "8vw",
     },
     {
       name: "JavaScript",
       icon: javascript,
-      x: "20vw",
-      y: "-6vw",
+      x: "28vw",
+      y: "-5vw",
     },
     {
-      name: "React JS",
+      name: "ReactJS",
       icon: reactjs,
       x: "15vw", 
       y: "-18vw",
     },
     {
-      name: "Node JS",
+      name: "NodeJS",
       icon: nodejs,
-      x: "10vw", 
-      y: "-12vw",
+      x: "5vw", 
+      y: "-10vw",
     },
     {
       name: "MongoDB",
       icon: mongodb,
       x: "0vw", 
-      y: "12vw",
+      y: "15vw",
     },
     {
-      name: "Three JS",
+      name: "ThreeJS",
       icon: threejs,
       x: "12vw", 
       y: "6vw",
     },
     {
-      name: "git",
+      name: "Git",
       icon: git,
       x: "-20vw", 
       y: "10vw",
     },
     {
-      name: "figma",
+      name: "Figma",
       icon: figma,
       x: "-20vw", 
       y: "-15vw",
+    },
+    {
+      name: "AWS",
+      icon: aws,
+      x: "-30vw", 
+      y: "-5vw",
+    },
+    {
+      name: "MySQL",
+      icon: mysql,
+      x: "-13vw", 
+      y: "-3vw",
+    },
+    {
+      name: "Python",
+      icon: python,
+      x: "-5vw", 
+      y: "-15vw",
+    },
+    {
+      name: "Flask",
+      icon: flask,
+      x: "25vw", 
+      y: "5vw",
+    },
+    {
+      name: "ViteJS",
+      icon: vitejs,
+      x: "12vw", 
+      y: "-5vw",
     },
   ];
 
