@@ -5,6 +5,10 @@ import carrent from './carrent.png';
 import tripguide from './tripguide.png';
 import jobit from './jobit.png';
 import web from './web.png'
+import chatmode1 from './chatmode-1.png'
+import chatmode2 from './chatmode-2.png'
+import imaginator1 from './imaginator-1.png'
+import imaginator2 from './imaginator-2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -43,4 +47,8 @@ export {
     mysql,
     python,
     vitejs,
+    chatmode1,
+    chatmode2,
+    imaginator1,
+    imaginator2,
 }

@@ -16,13 +16,18 @@ import {
     python,
     vitejs,
     mysql,
+    chatmode1,
+    chatmode2,
+    imaginator1,
+    imaginator2,
+
 } from "../assets"
 
 const projects = [
     {
-      title: "Car Rent",
+      title: "Imaginator",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals.",
+        "AI Image Generator",
       tags: [
         {
           name: "react",
@@ -37,14 +42,15 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: imaginator1,
+      image2: imaginator2,
       link: "/",
-      github: "https://github.com/",
+      github: "https://github.com/MiaTian1024/Imaginator-AI-Image-Generator",
     },
     {
-      title: "Job IT",
+      title: "Chat Mode",
       description:
-        "Web application that enables users to search for job openings",
+        "Chat GPT Clone web app",
       tags: [
         {
           name: "react",
@@ -59,9 +65,10 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: chatmode1,
+      image2: chatmode2,
       link: "/",
-      github: "https://github.com/",
+      github: "https://github.com/MiaTian1024/Chat-Mode",
     },
     {
       title: "Trip Guide",
