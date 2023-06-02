@@ -16,7 +16,8 @@
     "framer-motion": "^10.12.10",
     "maath": "^0.5.3",
     "react": "^18.2.0",
-    "react-router-dom": "^6.11.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.152.2"

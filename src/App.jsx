@@ -11,7 +11,7 @@ const App = () => {
         </header>
         <main className="w-full h-auto bg-primary">
           <Routes>        
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
