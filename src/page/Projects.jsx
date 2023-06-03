@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Tilt} from 'react-tilt'
 
 import { Layout, TransitionEffect } from '../components'
@@ -8,7 +8,16 @@ import { GithubIcon } from '../components/Icons'
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 import { projects } from '../constants'
 
-const ProjectCard = ({index, title, image, tags, description, link, github }) => {
+const ProjectCard = ({index, title, image, image2, tags, description, link, github }) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleMouseEnter =() =>{
+    setIsHovered(true)
+  }
+  const handleMouseLeave =() =>{
+    setIsHovered(false)
+  }
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
     <Tilt
@@ -22,12 +31,22 @@ const ProjectCard = ({index, title, image, tags, description, link, github }) =>
       <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-blue/60 bg-light p-6 relative rounded-br-2xl'>
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-blue/40 rounded-br-3xl' />
       <a href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-        <motion.img 
-          whileHover={{ scale:1.2 }}
+        <motion.div
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+         {isHovered 
+          ? <img 
+          src={image2} 
+          alt={title} 
+          className='w-full h-[200px]' />
+          : <img 
           src={image} 
           alt={title} 
-          className='w-full h-[200px]' >
-        </motion.img>
+          className='w-full h-[200px]' />
+          }
+         
+        </motion.div>
       </a>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
         <a href={link} target="_blank" className='hover:underline text-pink first-letter:underline-offset-2'>

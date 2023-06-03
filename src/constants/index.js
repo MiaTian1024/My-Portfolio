@@ -1,7 +1,4 @@
 import {
-    carrent,
-    jobit,
-    tripguide,
     javascript,
     html,
     css,
@@ -20,6 +17,8 @@ import {
     chatmode2,
     imaginator1,
     imaginator2,
+    library1,
+    library2,
 
 } from "../assets"
 
@@ -71,9 +70,9 @@ const projects = [
       github: "https://github.com/MiaTian1024/Chat-Mode",
     },
     {
-      title: "Trip Guide",
+      title: "Library System",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels.",
+        "A library manage system",
       tags: [
         {
           name: "nextjs",
@@ -88,9 +87,10 @@ const projects = [
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: library1,
+      image2: library2,
       link: "/",
-      github: "https://github.com/",
+      github: "https://github.com/MiaTian1024/Library-Web-App",
     },
   ];
   

@@ -1,14 +1,13 @@
 import close from './close.svg';
 import menu from './menu.svg';
 import logo from './logo.png';
-import carrent from './carrent.png';
-import tripguide from './tripguide.png';
-import jobit from './jobit.png';
 import web from './web.png'
 import chatmode1 from './chatmode-1.png'
 import chatmode2 from './chatmode-2.png'
 import imaginator1 from './imaginator-1.png'
 import imaginator2 from './imaginator-2.png'
+import library1 from './library-1.png'
+import library2 from './library-2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -29,9 +28,6 @@ export {
     close,
     menu,
     logo,
-    carrent,
-    tripguide,
-    jobit,
     web,
     css,
     html,
@@ -51,4 +47,6 @@ export {
     chatmode2,
     imaginator1,
     imaginator2,
+    library1,
+    library2,
 }
