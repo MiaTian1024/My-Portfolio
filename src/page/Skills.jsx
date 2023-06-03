@@ -16,7 +16,7 @@ const Skill =({image, x, y,name}) => {
 
   return (
     <motion.div className='flex items-center justify-center rounded-full
-          cursor-pointer absolute bg-light/80 p-2 border border-solid border-pink/60 font-semibold' 
+          cursor-pointer absolute bg-light/80 p-2 border-2 border-solid border-pink/60 font-semibold' 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           initial={{x:0, y:0}}
@@ -42,7 +42,7 @@ const Skills = () => {
       <div className='h-screen'>
           
           <div className="w-full h-full p-5 relative text-blue font-bold flex items-center justify-center rounded-full bg-circularLight">
-            <motion.div className='flex items-center justify-center rounded-full font-semibold bg-light/80 p-2 border border-solid border-pink/60 cursor-pointer'
+            <motion.div className='flex items-center justify-center rounded-full font-semibold bg-light/80 p-2 border-2 border-solid border-pink/60 cursor-pointer'
               whileHover={{scale:1.05}}
             >
               {<img src={web} alt="web" className='w-12 h-12'/>}
