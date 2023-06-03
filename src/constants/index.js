@@ -99,38 +99,38 @@ const projects = [
     {
       name: "HTML",
       icon: html,
-      x: "-25vw" ,
-      y: "2vw",
+      x: "-20vw" ,
+      y: "8vw",
     },
     {
       name: "CSS",
       icon: css,
-      x: "-5vw",
-      y: "8vw",
+      x: "-8vw",
+      y: "10vw",
     },
     {
       name: "JavaScript",
       icon: javascript,
-      x: "28vw",
+      x: "20vw",
       y: "-5vw",
     },
     {
       name: "ReactJS",
       icon: reactjs,
       x: "15vw", 
-      y: "-18vw",
+      y: "-20vw",
     },
     {
       name: "NodeJS",
       icon: nodejs,
-      x: "5vw", 
+      x: "8vw", 
       y: "-10vw",
     },
     {
       name: "MongoDB",
       icon: mongodb,
-      x: "0vw", 
-      y: "15vw",
+      x: "5vw", 
+      y: "12vw",
     },
     {
       name: "ThreeJS",
@@ -141,14 +141,14 @@ const projects = [
     {
       name: "Git",
       icon: git,
-      x: "-20vw", 
-      y: "10vw",
+      x: "-5vw", 
+      y: "-10vw",
     },
     {
       name: "Figma",
       icon: figma,
       x: "-20vw", 
-      y: "-15vw",
+      y: "-18vw",
     },
     {
       name: "AWS",
@@ -159,14 +159,14 @@ const projects = [
     {
       name: "MySQL",
       icon: mysql,
-      x: "-13vw", 
-      y: "-3vw",
+      x: "-15vw", 
+      y: "-5vw",
     },
     {
       name: "Python",
       icon: python,
       x: "-5vw", 
-      y: "-15vw",
+      y: "-20vw",
     },
     {
       name: "Flask",
@@ -177,8 +177,8 @@ const projects = [
     {
       name: "ViteJS",
       icon: vitejs,
-      x: "12vw", 
-      y: "-5vw",
+      x: "28vw", 
+      y: "-12vw",
     },
   ];
 
