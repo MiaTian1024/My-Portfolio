@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import { motion } from 'framer-motion';
-import { TransitionEffect, Layout } from '../components';
+import { TransitionEffect, Layout , SphereCanvas} from '../components';
 import { technologies } from '../constants';
 import { web } from '../assets';
 
@@ -60,6 +60,9 @@ const Skills = () => {
 
           </div>
       </Layout>
+      <div className='h-screen w-auto'>
+      <SphereCanvas />
+      </div>
     </>
   );
 }
