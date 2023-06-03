@@ -9,7 +9,7 @@ const App = () => {
         <header> 
           <Navbar />
         </header>
-        <main className="w-full h-auto bg-primary">
+        <main className="w-full h-auto bg-light">
           <Routes>        
             <Route exact path="/" element={<Home />} />
             <Route path="/skills" element={<Skills />} />

@@ -14,15 +14,15 @@ export const SphereModel = () => {
         <MeshDistortMaterial 
           color="#cb017c" 
           attach="material" 
-          distort={1.5} 
+          distort={1.8} 
           speed={2}    
         />
-         <Decal 
+         {/* <Decal 
           position={[0,0,0]}
           rotation={[0,0,0]}
           scale={2.5}
           map={useTexture(heroImage)}
-        />
+        /> */}
         </Sphere>
       </mesh>
       

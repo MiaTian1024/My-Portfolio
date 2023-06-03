@@ -28,8 +28,8 @@ const ProjectCard = ({index, title, image, image2, tags, description, link, gith
         }}
         className="py-5 w-[360px] small:w-full"
       >
-      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-blue/60 bg-light p-6 relative rounded-br-2xl'>
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-blue/40 rounded-br-3xl' />
+      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-pink/60 bg-light p-6 relative rounded-br-2xl'>
+      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-pink/40 rounded-br-3xl' />
       <a href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
         <motion.div
           onMouseEnter={handleMouseEnter}
@@ -53,7 +53,7 @@ const ProjectCard = ({index, title, image, image2, tags, description, link, gith
           <h2 className='my-2 w-full text-left text-pink text-3xl font-bold'>{title}</h2>
         </a>
         <div className='w-full h-[80px]'>
-        <p className='text-blue/50 font-medium text-md'>{description}</p>
+        <p className='text-dark/50 font-medium text-md'>{description}</p>
         </div>
 
         <div className='mt-2 flex flex-wrap gap-2'>
@@ -80,7 +80,7 @@ const Projects = () => {
   return (
     <>
       <TransitionEffect  />
-      <div className='w-full h-auto min-h-screen z-0 bg-primary pt-16 px-32 large:px-16 middle:px-12 small:px-8, xs:px-6'>
+      <div className='w-full h-auto min-h-screen z-0 bg-light pt-16 px-32 large:px-16 middle:px-12 small:px-8, xs:px-6'>
       <motion.section
         variants={staggerContainer()}
         initial="hidden"
@@ -90,11 +90,11 @@ const Projects = () => {
       >
         
          <div>
-            <h2 className="text-blue font-black middle:text-[50px] small:text-[40px] xs:text-[30px] text-[60px]">Projects</h2>
+            <h2 className="text-pink font-black middle:text-[50px] small:text-[40px] xs:text-[30px] text-[60px]">Projects</h2>
           </div>
 
           <div className='w-full flex'>
-            <p className='mt-3 text-blue/60 text-[18px] max-w-5xl leading-[30px]'>
+            <p className='mt-3 text-pink/60 text-[18px] max-w-5xl leading-[30px]'>
               Following projects showcases my skills and experience through real-world examples of my work.
             </p>
           </div>

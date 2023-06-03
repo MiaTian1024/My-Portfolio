@@ -7,10 +7,10 @@ const CustomLink = ({href, title, className=""}) => {
   const route = useLocation();
 
   return(
-    <Link to={href} className={`${className} relative hover:text-blue group ${route.pathname === href ? 'text-blue' : 'text-pink'}`}>
+    <Link to={href} className={`${className} relative hover:text-dark group ${route.pathname === href ? 'text-dark' : 'text-pink'}`}>
       {title}
 
-      <span className={`h-[1px] inline-block bg-blue absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+      <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
             ${route.pathname === href ? 'w-full' : 'w-0'}`}
       >&nbsp;</span>
     </Link>
@@ -25,10 +25,10 @@ const CustomMobileLink = ({href, title, className="", toggle}) => {
   }
 
   return(
-    <Link to={href} className={`${className} my-2 relative group ${route.pathname === href ? 'text-blue' : 'text-pink'}`} onClick={handleClick}>
+    <Link to={href} className={`${className} my-2 relative hover:text-dark group ${route.pathname === href ? 'text-dark' : 'text-pink'}`} onClick={handleClick}>
       {title}
 
-      <span className={`h-[1px] inline-block bg-blue absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+      <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
             ${route.pathname === href ? 'w-full' : 'w-0'}`}
       >&nbsp;</span>
     </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className= "w-full pt-16 large:pt-12 px-32 large:px-16 middle:px-12 small:px-8 xs:px-6 font-medium text-lg bg-primary flex items-center relative z-10" >
+    <header className= "w-full pt-16 large:pt-12 px-32 large:px-16 middle:px-12 small:px-8 xs:px-6 font-bold text-lg bg-light flex items-center relative z-10" >
 
       <button className='flex-col justify-center items-center hidden large:flex' onClick={handleClick}>
         <span className={`bg-pink block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
@@ -53,7 +53,7 @@ const Navbar = () => {
         <span className={`bg-pink block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
       </button>
     
-      <div className=' w-full flex justify-between items-center large:hidden'>  
+      <div className=' w-full flex justify-between text-large items-center large:hidden'>  
         <nav>
         <CustomLink href="/" title="Home" className='mr-4'/>
         <CustomLink href="/skills" title="Skills" className='mx-4'/>
@@ -100,7 +100,7 @@ const Navbar = () => {
             initial={{scale:0, opacity:0, x:'-50%', y:'-50%'}}
             animate={{scale:1, opacity:1}}
             className='min-w-[70vw] flex flex-col justify-between items-center z-30 
-            fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-light/60 rounded-lg backdrop-blur-md py-32'>  
+            fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary/60 rounded-lg backdrop-blur-md py-32'>  
           <nav className='flex items-center flex-col justify-center'>
           <CustomMobileLink href="/" title="Home"  toggle={handleClick} />
           <CustomMobileLink href="/skills" title="Skills" toggle={handleClick}/>

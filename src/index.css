@@ -12,10 +12,6 @@
   scroll-behavior: smooth;
 }
 
-.svg-style{
-  fill:'#cb017c'
-}
-
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
