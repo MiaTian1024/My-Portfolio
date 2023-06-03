@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber'
 import { Decal, useTexture, OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei'
 
 import heroImage from '../assets/hero.png'
-import logo from '../assets/logo.png'
 
 
 export const SphereModel = () => {
@@ -38,7 +37,6 @@ const SphereCanvas = () => {
   
       <Canvas 
         shadows
-        frameloop='demand'
         camera={{ fov:30, near:0.1, far:200, position: [-4, 3, 6] }}
         gl={{ preserveDrawingBuffer:true }}
       >

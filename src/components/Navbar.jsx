@@ -7,7 +7,7 @@ const CustomLink = ({href, title, className=""}) => {
   const route = useLocation();
 
   return(
-    <Link to={href} className={`${className} relative group ${route.pathname === href ? 'text-blue' : 'text-pink'}`}>
+    <Link to={href} className={`${className} relative hover:text-blue group ${route.pathname === href ? 'text-blue' : 'text-pink'}`}>
       {title}
 
       <span className={`h-[1px] inline-block bg-blue absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
