@@ -37,7 +37,7 @@ const SphereCanvas = () => {
   
       <Canvas 
         shadows
-        camera={{ fov:30, near:0.1, far:200, position: [-4, 3, 6] }}
+        camera={{ fov:25, near:0.1, far:200, position: [8, 3, 5] }}
         gl={{ preserveDrawingBuffer:true }}
       >
         <Suspense fallback={null}>

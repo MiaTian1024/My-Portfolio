@@ -1,6 +1,8 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import heroImage from '../../public/hero.png'
 import logo from '../assets/logo.png'
+import { slideIn, staggerContainer } from '../utils/motion'
 import {HireMe, AnimatedText, Layout, TransitionEffect, SphereCanvas} from '../components'
 
 
@@ -8,11 +10,24 @@ const Home = () => {
   return (
     <div>
       <TransitionEffect  />
-        <div className='z-0 absolute left-[25%] w-screen h-screen large:w-screen large:h-screen large:left-0 bottom-[5px] large:bottom-[10%]'>
+        <motion.section
+            variants={staggerContainer()}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+          >
+            <motion.div
+              variants={slideIn('left', 'tween', 0.2, 1)}
+              className='z-0 absolute left-[20%] w-screen h-screen large:w-screen large:h-screen large:left-0 large:bottom-10 middle:bottom-0 '
+            >
             <SphereCanvas />
-        </div>
+            </motion.div>
+        </motion.section>
+        {/* <div className='z-0 absolute left-[25%] w-screen h-screen large:w-screen large:h-screen large:left-0 bottom-[5px] large:bottom-[10%]'>
+            <SphereCanvas />
+        </div> */}
         <Layout className=' pt-0 h-screen flex'>
-          <div className='flex relative max-w-7xl items-center justify-between gap-10 large:pt-60 '>
+          <div className='flex relative max-w-7xl items-end justify-between'>
 
             {/* <div className='w-2/5 large:w-1/2 middle:w-3/5 small:w-full small:px-10'>
               
@@ -25,7 +40,7 @@ const Home = () => {
              
             </div> */}
 
-            <div className='w-3/5 flex flex-col items-center self-center large:w-full  large:text-center middle:full middle:text-center'>
+            <div className='w-3/5 flex max-w-7xl flex-col justify-end items-center large:w-full large:text-center middle:full middle:text-center'>
               <AnimatedText 
                 text="Turing Vision Into Reality With Code And Design."
                 className='!text-5xl large:!text-4xl middle:!text-3xl small:!text-2xl !text-left large:!text-center !leading-snug'
@@ -41,7 +56,7 @@ const Home = () => {
           </div>
 
           
-            <HireMe />
+            {/* <HireMe /> */}
           
         </Layout>
     </div>

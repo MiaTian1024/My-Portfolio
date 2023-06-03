@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import { motion } from 'framer-motion';
-import { TransitionEffect, Layout , SphereCanvas} from '../components';
+import { TransitionEffect, Layout} from '../components';
 import { technologies } from '../constants';
 import { web } from '../assets';
 
@@ -39,7 +39,7 @@ const Skills = () => {
     <>
       <TransitionEffect />
       <h2 className='font-bold pt-10 text-pink/80 text-6xl w-full text-center'>Skills</h2>   
-      <Layout className='h-screen'>
+      <div className='h-screen'>
           
           <div className="w-full h-full p-5 relative text-blue font-bold flex items-center justify-center rounded-full bg-circularLight">
             <motion.div className='flex items-center justify-center rounded-full font-semibold bg-light/80 p-2 border border-solid border-pink/60 cursor-pointer'
@@ -59,9 +59,6 @@ const Skills = () => {
             ))}
 
           </div>
-      </Layout>
-      <div className='h-screen w-auto'>
-      <SphereCanvas />
       </div>
     </>
   );
