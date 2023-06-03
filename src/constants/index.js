@@ -19,10 +19,35 @@ import {
     imaginator2,
     library1,
     library2,
+    product1,
+    product2,
 
 } from "../assets"
 
 const projects = [
+    {
+      title: "3D Product",
+      description:
+        "3D product customizer",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: product1,
+      image2: product2,
+      link: "https://3d-product.website/",
+      github: "https://github.com/MiaTian1024/3D-product",
+    },
     {
       title: "Imaginator",
       description:

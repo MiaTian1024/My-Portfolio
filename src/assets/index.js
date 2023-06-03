@@ -8,6 +8,8 @@ import imaginator1 from './imaginator-1.png'
 import imaginator2 from './imaginator-2.png'
 import library1 from './library-1.png'
 import library2 from './library-2.png'
+import product1 from './3dproduct-1.png'
+import product2 from './3dproduct-2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -49,4 +51,6 @@ export {
     imaginator2,
     library1,
     library2,
+    product1,
+    product2,
 }
