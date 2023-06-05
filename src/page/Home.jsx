@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import heroImage from '../../public/hero.png'
 import logo from '../assets/logo.png'
 import { slideIn, staggerContainer } from '../utils/motion'
-import {HireMe, AnimatedText, Layout, TransitionEffect, SphereCanvas} from '../components'
+import {HireMe, TypingText, AnimatedText, Layout, TransitionEffect, SphereCanvas} from '../components'
 
 
 const Home = () => {
@@ -20,14 +20,25 @@ const Home = () => {
           <div className='flex relative max-w-7xl items-center  justify-between'>
 
             <div className='w-3/5 flex max-w-7xl flex-col justify-end items-center large:w-full large:text-center middle:full middle:text-center'>
+            <motion.div
+              variants={staggerContainer}
+              initial='hidden'
+              whileInView='show'
+              viewport={{once: false, amount:0.25 }}
+              className='w-full py-2 flex items-left justify-start large:items-center large:justify-center text-center overflow-hidden'
+            >
+
+              <TypingText title=" ---- HELLO" textStyles='text-center' />
+            </motion.div>
+
               <AnimatedText 
-                text="Turing Vision Into Reality With Code And Design."
-                className='!text-5xl large:!text-4xl middle:!text-3xl small:!text-2xl !text-left large:!text-center !leading-snug'
+                text="I'm Mia TIAN"
+                className='!text-7xl large:!text-6xl middle:!text-5xl small:!text-4xl !text-left large:!text-center !leading-snug'
               />
               
               <p className='my-4 text-dark/75 font-medium middle:text-sm small:text-xs'>
                 As a full-stack developer, I am dedicated to turing ideas into innovative web applications. 
-                Explore my latest projects, showcasing my expertise in web development
+                Explore my latest projects, showcasing my expertise in web development.
               </p>
               
             </div>

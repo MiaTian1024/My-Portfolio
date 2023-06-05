@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Layout from './Layout';
 import HireMe from './HireMe';
 import TransitionEffect from './TransitionEffect';
+import { TypingText } from './CustomTexts';
 
 export {
     Navbar,
@@ -18,4 +19,5 @@ export {
     Layout,
     HireMe,
     TransitionEffect,
+    TypingText,
 }

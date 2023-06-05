@@ -52,8 +52,8 @@ const ProjectCard = ({index, title, image, image2, tags, description, link, gith
         <a href={link} target="_blank" className='hover:underline text-pink first-letter:underline-offset-2'>
           <h2 className='my-2 w-full text-left text-pink text-3xl font-bold'>{title}</h2>
         </a>
-        <div className='w-full h-[80px]'>
-        <p className='text-dark/50 font-medium text-md'>{description}</p>
+        <div className='w-full h-[40px]'>
+        <p className='text-pink/50 font-medium text-md'>{description}</p>
         </div>
 
         <div className='mt-2 flex flex-wrap gap-2'>

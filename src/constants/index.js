@@ -28,14 +28,14 @@ const projects = [
     {
       title: "3D Product",
       description:
-        "3D product customizer",
+        "3D product customize website",
       tags: [
         {
-          name: "react",
+          name: "threejs",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "react",
           color: "green-text-gradient",
         },
         {
@@ -51,7 +51,7 @@ const projects = [
     {
       title: "Imaginator",
       description:
-        "AI Image Generator",
+        "AI image generator website",
       tags: [
         {
           name: "react",
@@ -62,61 +62,61 @@ const projects = [
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
       ],
       image: imaginator1,
       image2: imaginator2,
-      link: "/",
+      link: "https://imaginator.website/",
       github: "https://github.com/MiaTian1024/Imaginator-AI-Image-Generator",
-    },
-    {
-      title: "Chat Mode",
-      description:
-        "Chat GPT Clone web app",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: chatmode1,
-      image2: chatmode2,
-      link: "/",
-      github: "https://github.com/MiaTian1024/Chat-Mode",
     },
     {
       title: "Library System",
       description:
-        "A library manage system",
+        "Library management website",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mysql",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "flask",
           color: "pink-text-gradient",
         },
       ],
       image: library1,
       image2: library2,
-      link: "/",
+      link: "https://github.com/MiaTian1024/Library-Web-App",
       github: "https://github.com/MiaTian1024/Library-Web-App",
     },
+    {
+      title: "Chat Mode",
+      description:
+        "Chat GPT clone web app",
+      tags: [
+        {
+          name: "vite",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "openai",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: chatmode1,
+      image2: chatmode2,
+      link: "https://github.com/MiaTian1024/Chat-Mode",
+      github: "https://github.com/MiaTian1024/Chat-Mode",
+    },    
   ];
   
 
