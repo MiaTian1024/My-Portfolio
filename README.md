@@ -1,5 +1,5 @@
 # My-Portfolio
-Please explore my portfolio website, showcasing my expertise in web development.  
+Explore my portfolio website, showcasing my expertise in web development.  
 #### Web Address: https://mia-tian.com/
 
 ### Screenshot  
