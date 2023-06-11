@@ -10,6 +10,8 @@ import library1 from './library-1.png'
 import library2 from './library-2.png'
 import product1 from './3dproduct-1.png'
 import product2 from './3dproduct-2.png'
+import hotel1 from './hotel1.png'
+import hotel2 from './hotel2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -53,4 +55,6 @@ export {
     library2,
     product1,
     product2,
+    hotel1,
+    hotel2,
 }

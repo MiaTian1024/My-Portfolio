@@ -21,10 +21,36 @@ import {
     library2,
     product1,
     product2,
+    hotel1,
+    hotel2,
 
 } from "../assets"
 
 const projects = [
+  {
+    title: "Mia Vista Hotel",
+    description:
+      "Hotel management system website",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hotel1,
+    image2: hotel2,
+    link: "http://miatian.pythonanywhere.com/",
+    github: "https://github.com/MiaTian1024/Hotel-Management-System",
+  },
+
     {
       title: "3D Product",
       description:
