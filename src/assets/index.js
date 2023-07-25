@@ -14,6 +14,8 @@ import hotel1 from './hotel1.png'
 import hotel2 from './hotel2.png'
 import runner1 from './runner-1.png'
 import runner2 from './runner-2.png'
+import maker1 from './maker-1.png'
+import maker2 from './maker-2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -61,4 +63,6 @@ export {
     hotel2,
     runner1,
     runner2,
+    maker1,
+    maker2,
 }

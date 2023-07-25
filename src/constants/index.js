@@ -25,6 +25,8 @@ import {
     hotel2,
     runner1,
     runner2,
+    maker1,
+    maker2,
 
 } from "../assets"
 
@@ -98,6 +100,29 @@ const projects = [
       image2: imaginator2,
       link: "https://imaginator.website/",
       github: "https://github.com/MiaTian1024/Imaginator-AI-Image-Generator",
+    },
+    {
+      title: "Game Maker",
+      description:
+        "Treasure Hunters Maker",
+      tags: [
+        {
+          name: "vite",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "pygame",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: maker1,
+      image2: maker2,
+      link: "https://github.com/MiaTian1024/Treasure-Hunters-Maker/tree/main",
+      github: "https://github.com/MiaTian1024/Treasure-Hunters-Maker/tree/main",
     },
     {
       title: "Runner Game",
