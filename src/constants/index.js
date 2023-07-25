@@ -23,6 +23,8 @@ import {
     product2,
     hotel1,
     hotel2,
+    runner1,
+    runner2,
 
 } from "../assets"
 
@@ -98,6 +100,29 @@ const projects = [
       github: "https://github.com/MiaTian1024/Imaginator-AI-Image-Generator",
     },
     {
+      title: "Runner Game",
+      description:
+        "Runner Game with Pygame",
+      tags: [
+        {
+          name: "vite",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "pygame",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: runner1,
+      image2: runner2,
+      link: "https://github.com/MiaTian1024/Runner-Game-with-Pygame",
+      github: "https://github.com/MiaTian1024/Runner-Game-with-Pygame",
+    },  
+    {
       title: "Library System",
       description:
         "Library management website",
@@ -142,7 +167,7 @@ const projects = [
       image2: chatmode2,
       link: "https://github.com/MiaTian1024/Chat-Mode",
       github: "https://github.com/MiaTian1024/Chat-Mode",
-    },    
+    },      
   ];
   
 

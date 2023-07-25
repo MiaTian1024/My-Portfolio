@@ -12,6 +12,8 @@ import product1 from './3dproduct-1.png'
 import product2 from './3dproduct-2.png'
 import hotel1 from './hotel1.png'
 import hotel2 from './hotel2.png'
+import runner1 from './runner-1.png'
+import runner2 from './runner-2.png'
 
 import css from './tech/css.png';
 import html from './tech/html.png';
@@ -57,4 +59,6 @@ export {
     product2,
     hotel1,
     hotel2,
+    runner1,
+    runner2,
 }
